@@ -1,0 +1,33 @@
+<div *ngIf="show; else loading">
+  <!-- <div>
+      <div>
+          {{show.name}}
+      </div>
+      <div>
+          <p>Language: {{show.language}}</p>
+          <p> Runtime: {{show.runtime}}min</p>
+          <p>Rating:{{show.rating}}</p> 
+          <p>Summary:{{show.summary}}</p>
+      </div>
+      <img class="show-image" [src] = 'show.image'>
+      </div> -->
+      <button class="back-button btn-primary" (click)="navigateToHomePage()">< Back</button>
+  <div
+    fxLayout="row"
+    fxLayout.lt-sm="column"
+    fxLayoutGap="15px"
+    fxLayoutAlign="center center"
+  >
+    
+    <app-current-show [current]="show"></app-current-show>
+    <mat-card class="show-info">
+      <p><strong>Language:</strong> {{ show.language }}</p>
+      <p><strong>Runtime:</strong> {{ show.runtime }}min</p>
+      <p *ngIf="show.genres"><strong>Genres:</strong> {{ show.genres }}</p>
+      <p *ngIf="show.network"><strong>Network:</strong> {{ show.network.name }}</p>
+      <p *ngIf="show.network"><strong>Country:</strong> {{ show.network.country.name }}</p>
+      <span><strong>Summary:</strong> </span>
+      <span [innerHtml]="show.summary"></span>
+    </mat-card>
+  </div>
+</div>

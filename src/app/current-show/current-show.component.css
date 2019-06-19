@@ -1,0 +1,20 @@
+.show-card {
+    width: 175px;
+    margin-bottom: 15px;
+  }
+  
+  .show-name {
+    font-size: medium;
+  }
+  
+  .long-text {
+      overflow: hidden;
+      white-space:nowrap;
+      text-overflow:ellipsis;
+      width:150px;
+      display:inline-block;
+  }
+  
+  .show-image {
+    height: 250px;
+  }

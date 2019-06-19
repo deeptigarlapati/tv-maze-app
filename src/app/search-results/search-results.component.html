@@ -1,0 +1,6 @@
+<!-- <button class="back-button btn-primary" (click)="navigateToHomePage()">< Back</button> -->
+<div fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutGap="15px" fxLayoutAlign="center center">
+  <div *ngFor="let show of shows">
+    <app-current-show [current]="show"> </app-current-show>
+  </div>
+</div>

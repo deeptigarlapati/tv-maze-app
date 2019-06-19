@@ -1,0 +1,22 @@
+.show-info {
+    background-color: #F7F7F7;
+    /* margin-right: 250px; */
+}
+
+.back-button {
+    background-color: #F7F7F7;
+    color: black;
+    border-bottom: #F7F7F7 solid 1px;
+    border-radius: 1000px;
+    font-size: 1.25rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 1rem 0;
+    font-family: inherit;
+    padding: 0.5em 0.9em;
+    -webkit-appearance: none;
+    border: 1px solid transparent;
+    line-height: 1;
+    text-align: center;
+    cursor: pointer;
+}

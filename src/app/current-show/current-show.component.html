@@ -1,0 +1,14 @@
+<div class="show-card" (click)="navigateToShowDetails(current.name)">
+    <mat-card>
+        <img class="show-image" mat-card-image [src]="current.image" *ngIf="image" >
+        <mat-card-title matTooltip={{current.name}} *ngIf="name" >
+            <span class="long-text show-name" >{{current.name}}</span>
+        </mat-card-title>
+        <mat-card-subtitle *ngIf="rating">
+            <!-- <span class="long-text">Language: {{current.language}}</span>
+            <span class="long-text">Runtime: {{current.runtime}}min</span> -->
+            <span class="long-text">Rating: {{current.rating}}</span>
+        </mat-card-subtitle>
+    </mat-card>
+
+</div>
